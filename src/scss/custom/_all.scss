@@ -82,8 +82,15 @@ Available media query mixins:
 }
 
 
-$brand-color: #0071BC;
-
+$brand-color: #1B1464;
+.banner{
+	// background-image: url('../../src/images/trustcenter.jpg');
+	background-size: cover;
+	background-position: 100% 30%;
+	height: 320px;
+	max-height: 100%;
+	display: none;
+}
 a{
 	color			:$brand-color;
 	text-decoration	: none;
@@ -629,7 +636,7 @@ a{
     height: 50px;
     position: fixed;
     bottom: 15px;
-    background-color: #0071bc;
+    background-color: $brand-color;
 	right: 15px;
 	text-align: center;
 	border-radius: 50%;
