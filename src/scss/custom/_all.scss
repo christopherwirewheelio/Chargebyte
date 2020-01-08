@@ -473,14 +473,18 @@ a{
 	.copyright{
 		display: flex;
 		justify-content: center;
-		p{
-			color: #fff;
-			font-weight: 500;
-			margin-bottom: 0px;
-		}
-		.transition{
-			color: #fff;
-		}
+		p {
+            color: #fff;
+            font-weight: 300;
+            margin-bottom: 0px;
+        }
+        .transition{
+            color: #fff;
+            font-weight: 500;
+            &:hover{
+                pointer-events: none;
+            }
+        }
 		
 	}
 }

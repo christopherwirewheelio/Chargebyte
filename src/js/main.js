@@ -150,6 +150,10 @@ jQuery(document).ready(function ($) {
 			.fail(function( jqxhr, settings, exception ) {
 				console.log( exception );
 		});
+
+		// adding copyright timestamp to footer
+		const footerContent = `<p>© <span>${new Date().getFullYear()}</span> <a href="#" class="transition">WireWheel</a> All rights reserved.</p>`
+		$(document).find('.copyright').html(footerContent);
 });
 
 
