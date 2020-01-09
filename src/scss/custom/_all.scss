@@ -762,6 +762,26 @@ a:hover{
 	margin-top: 5% !important;
 }
 
+.ww-section--locations  {
+	svg{
+		width: 900px;
+		path{
+			fill: #fff;
+			&.highlighted{
+				fill: #0abc00;
+				&:hover{
+					fill: #0abc00;
+				}
+			}
+			&:hover{
+				fill: gray;
+				stroke: black;
+			}
+		}
+	}
+	
+}
+
 @media (min-width: 768px){
 .navbar-expand-md .navbar-nav .dropdown-menu {
 	margin-left: -15%;
