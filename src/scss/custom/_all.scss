@@ -50,6 +50,8 @@ Available media query mixins:
 			&:focus{
 				border: 1px solid $brand-color !important;
 			}
+
+			
 	}
 }
 
@@ -573,6 +575,22 @@ a{
 				width: 50%;
 				max-width: 100%;
 				@include formFields;
+			}
+			@include formFields;
+			.p-checkbox > input:focus, .p-radio >  input:focus{
+				border: 0px solid !important;
+			}
+			label{
+				&.p-select-label{
+				    color: #333f48;
+				}
+			}
+			.p-select{
+				margin-bottom: 20px;
+				margin-top: 30px;
+			}
+			.group__container{
+				margin:20px 0px;
 			}
 		}
 		.vertical-center{
